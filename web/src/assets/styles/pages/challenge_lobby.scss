@@ -1,0 +1,97 @@
+@use "../partials/variables" as *;
+@use "../partials/components";
+
+.lobby-setup {
+  height: 470px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  background: radial-gradient(
+    82.36% 77.72% at 50% 36.73%,
+    rgba(5, 165, 117, 0.2) 0%,
+    rgba(71, 71, 71, 0.11) 100%
+  );
+
+  &__title-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center;
+    margin-top: 1.5rem;
+  }
+
+  &__input {
+    width: 300px;
+    background: none;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 0.5px solid $primary-white;
+    margin-bottom: 1rem;
+    color: $primary-white;
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  //! Second card
+  &--problems {
+    border: 1px solid rgba(5, 165, 117, 0.44);
+    background: none;
+  }
+
+  &__problem-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: .5rem;
+  }
+}
+
+.button {
+  align-self: flex-end;
+}
+
+.start_button {
+  width: 140px;
+  height: 30px;
+  border-radius: 4px;
+  color: $primary-white;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  background: rgba(5, 165, 117, 0.44);
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}

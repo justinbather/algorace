@@ -1,0 +1,42 @@
+@use "../partials/variables" as *;
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  align-items: center;
+  width: 860px;
+  height: 60px;
+  border: 1px solid rgba(5, 165, 117, 0.44);
+  border-radius: 10px;
+  margin-top: 70px;
+
+  &__image-cont {
+    display: flex;
+    justify-self: flex-start;
+  }
+
+  &__spacer {
+    width: 62px;
+  }
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__inner-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    color: $primary-white;
+    font-size: 14px;
+  }
+}

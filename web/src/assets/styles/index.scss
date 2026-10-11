@@ -1,0 +1,43 @@
+@use "./partials/variables" as *;
+@use "./partials/typography" as *;
+
+* {
+  font-family: "JetBrains Mono";
+}
+
+button {
+  border: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  color: $primary-white;
+}
+
+h2 {
+  font-size: 25px;
+  color: $primary-white;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main_algo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-dark;
+}

@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+.button {
+  width: 140px;
+  height: 30px;
+  border-radius: 4px;
+  color: $primary-white;
+  cursor: pointer;
+
+  &--primary {
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    background: rgba(5, 165, 117, 0.44);
+  }
+
+  &--secondary {
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    background: none;
+  }
+
+  &--danger {
+    border: 1px solid rgba(255, 0, 0, 0.43);
+    background: none;
+  }
+}
+
+.problem-card {
+  // width: 90%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #f6f6f6;
+  margin: 0 1rem;
+  &--selected {
+    border: 1px solid $primary-green;
+  }
+
+  &__item {
+    width: 30%;
+    text-align: center;
+  }
+}
+
+
+.user-card {
+height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  gap: 5rem;
+
+  &__item {
+    text-align: center;
+
+    &--ready {
+      color: #52FF00;
+    }
+  }
+}
